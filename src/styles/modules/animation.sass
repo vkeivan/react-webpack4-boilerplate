@@ -1,0 +1,29 @@
+@import '../mixins/animation'
+
+@keyframes fade-in
+  from
+    opacity: .3
+  to
+    opacity: 1
+
+.fade-in
+  animation-name: fade-in
+  animation-duration: 2.0s
+
+.slide-down
+  animation-name: slide-down
+  animation-duration: 2.0s
+
+@keyframes slide-down
+  0%
+    transform: translateY(-100%)
+  50%
+    transform: translateY(8%)
+  65%
+    transform: translateY(-4%)
+  80%
+    transform: translateY(4%)
+  95%
+    transform: translateY(-2%)
+  100%
+    transform: translateY(0%)
